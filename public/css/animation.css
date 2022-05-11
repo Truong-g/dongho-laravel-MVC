@@ -1,0 +1,174 @@
+.action__box--phone-box i{
+    animation: phoneMove ease 1s infinite;
+}
+@keyframes phoneMove
+{
+    0%   {transform: rotate(0deg);}
+    10%  {transform: rotate(-20deg);}
+    20%  {transform: rotate(20deg);}
+    30%  {transform: rotate(-40deg);}
+    40%  {transform: rotate(40deg);}
+    50% {transform: rotate(0deg)}
+    100% {transform: rotate(0deg)}
+
+}
+.brand__list{
+    animation: showMenu linear 0.2s;
+    transform-origin: top;
+}
+
+
+@keyframes slideToDown {
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(1);
+    }
+}
+
+@keyframes slideFromRight {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(1);
+    }
+}
+
+@keyframes showMenu {
+    from{
+        transform: skewX(-10deg) scaleY(0.5);
+        opacity: 0;
+    }
+    to{
+        transform:skewX(0deg) scaleY(1);
+        opacity: 1;  
+    }
+}
+
+@keyframes moveLeftNext{
+    from{
+        margin-left: 100%;
+        opacity: 1;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeftCurr{
+    from{
+        margin-left: 0;
+        opacity: 1;
+    }
+    to{
+        margin-left: -100%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveRightCurr{
+    from{
+        margin-left: 0;
+        opacity: 1;
+    }
+    to{
+        margin-left: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveRightNext{
+    from{
+        margin-left: -100%;
+        opacity: 1;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes productTop{
+    from{
+        transform: scaleY(0)
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes actionNote{
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes actionNote{
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes actionPd{
+    0%{
+        top:100%;
+        opacity: 0
+    }
+    30%{
+        opacity: 1;
+    }
+    80%{
+        top:45%;
+        opacity: 1;
+    }
+    100%{
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes productBot{
+    from{
+        transform: scaleY(0)
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes scaleFromTop{
+    from{
+        opacity: 0;
+        transform: scale(0)
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes moveFromRight {
+    from{
+        transform: translateX(calc(100% + 13px));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
